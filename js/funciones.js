@@ -1,5 +1,6 @@
 'use strict';
-var contador = 0;
+var contador = 0,
+    adivina;
 
 // Función básica sin parámetros
 function hola () {
@@ -39,3 +40,18 @@ function dosLineas (a, b) {
     return a + '\n' + b;
 }
 
+// Función a modo de juego que asigna un valor aleatorio comprendido entre 0 y 9
+// en una variable global y lo compara con el número dado como parámetro (x)
+// si los números concuerdan devuelve una palabra mágica
+function adivinaNumero (x) {
+    let pMagic = ('b' + 'a' + + 'a' + 'a');
+
+    adivina = (isNaN(adivina)) ? nAleatorio(10) : adivina;
+
+    return (adivina === x) ? pMagic.toLowerCase() : 'Sigue intentándolo...';
+}
+
+// Función que devuelve un número aleatorio de dentro del rango dado (limite)
+function nAleatorio (limite) {
+    return Math.floor (Math.floor(limite) * Math.random());
+}
