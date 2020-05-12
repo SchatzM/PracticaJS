@@ -40,6 +40,13 @@ function dosLineas (a, b) {
     return a + '\n' + b;
 }
 
+// Función que devuelve una frase concatenada a la fecha actual
+function fecha () {
+    let fecha = new Date();
+
+    return 'La fecha de hoy es '+ fecha.toLocaleDateString('ES')
+} 
+
 // Función a modo de juego que asigna un valor aleatorio comprendido entre 0 y 9
 // en una variable global y lo compara con el número dado como parámetro (x)
 // si los números concuerdan devuelve una palabra mágica
