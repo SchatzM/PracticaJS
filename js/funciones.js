@@ -11,6 +11,19 @@ function multiplica (a, b) {
     return Number(a) * Number(b);
 }
 
+// Función con parámetros que imprime en consola la palabra dada (a) o 'error' en su defecto
+// la cantidad de veces dicha (b) o 3 por defecto.
+function repetir (a, n) {
+    let palabra = a || 'error',
+        nVeces = n || 3;
+
+    for (let i = 0; i < nVeces; i++) {
+        console.info(palabra);
+    }
+
+    return true;
+}
+
 // Función con parámetros y condicional
 function sonIguales (a, b) {
     return (a === b) ? true : false;
@@ -25,3 +38,4 @@ function aumentarContador () {
 function dosLineas (a, b) {
     return a + '\n' + b;
 }
+
