@@ -44,7 +44,7 @@ function dosLineas (a, b) {
 function fecha () {
     let fecha = new Date();
 
-    return 'La fecha de hoy es '+ fecha.toLocaleDateString('ES')
+    return 'La fecha de hoy es ' + fecha.toLocaleDateString('ES')
 } 
 
 // Función a modo de juego que asigna un valor aleatorio comprendido entre 0 y 9
